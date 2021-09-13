@@ -3,6 +3,8 @@
 - Navigate into folder and run `npm install`
 - Run `npm run start` to start the server
 - Open your browser to [localhost:3000](http://localhost:3000)
+- OR 
+- Open your browser to [https://teestunna.github.io/reactcalc/](https://teestunna.github.io/reactcalc/)
 - The App includes components `App.js`
 
 - On start, the default value in the display is '0'
