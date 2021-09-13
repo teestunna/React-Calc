@@ -1,5 +1,5 @@
 :root {
-    --primary: #d81e5b;
+    --primary: #F28C28;
     --secondary: #8c38ff;
     --dark: #131a26;
     --light: #eee;
@@ -27,7 +27,7 @@ body {
 
 .calculator {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     background-color: var(--bright);
     border-radius: 16px;
     overflow: hidden;
@@ -41,11 +41,6 @@ body {
     color: var(--light);
     font-size: 24px;
     font-weight: 300;
-}
-
-.display span {
-    /* font-size: 14px; */
-    color: #888;
 }
 
 button {
