@@ -6,10 +6,10 @@ function App() {
 	const [calculate, setCalculate] = useState("");
 	const [special, setSpecial] = useState("");
 	const [exponent, setExponent] = useState("");
-	// const wti = wti;
 
 	const calcOps = ['/', '*', '+', '-', '.'];
 
+	// Updates the present state of the display with user input
 	const updateCalculation = value => {
 		
 		if (
@@ -32,6 +32,7 @@ function App() {
 		}
 	}
 
+	// Returns an array of buttons containing digits 1 - 9
 	const calcDigits = () => {
 		const digits = [];
 
@@ -51,6 +52,7 @@ function App() {
 		return digits;
 	}
 
+	// Updates the present state of display with the result
     const calculation = () => {
         var checkResult = ''
         if(calculate.includes('--')){
@@ -74,6 +76,7 @@ function App() {
         }
     }
 
+	// Peforms deletion of the last character in the display
 	const backspace = () => {
 		if (calculate === '') {
 			return;
@@ -83,6 +86,7 @@ function App() {
 		setCalculate(value);
 	}
 
+	// Displays the wti price of the parsed in url
 	const getprice = wti => {
 		const getprice = wti.match(/(\d+)/);
 		const price = getprice[0];
